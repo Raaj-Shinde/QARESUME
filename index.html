@@ -48,9 +48,9 @@
   header.header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid rgba(10,20,30,0.06);padding-bottom:8px}
   header .identity {flex:1}
   h1.name{font-size:35px;margin:0;color:var(--text);font-weight:800;line-height:1}
-  p.title{margin:6px 0 0 0;font-size:11px;color:var(--muted);font-weight:600}
+  p.title{margin:6px 0 0 0;font-size:12px;color:var(--muted);font-weight:600}
 
-  .contact{ text-align:right; font-size:11px; color:var(--muted); line-height:1.25 }
+  .contact{ text-align:right; font-size:14px; color:var(--muted); line-height:1.25 }
   .contact a{ color:var(--accent); text-decoration:none; font-weight:600; word-break:break-all }
 
   /* Main grid */
@@ -62,22 +62,22 @@
   }
 
   /* Semantic section headings (ATS-friendly) */
-  h2.section-title{font-size:12.2px;color:var(--accent);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin:0 0 8px 0}
+  h2.section-title{font-size:15.2px;color:var(--accent);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin:0 0 8px 0}
 
-  p, li{font-size:11px;line-height:1.35;color:var(--text);margin:0 0 6px 0}
-  .muted{color:var(--muted);font-size:10.5px}
+  p, li{font-size:13.5px;line-height:1.35;color:var(--text);margin:0 0 6px 0}
+  .muted{color:var(--muted);font-size:12px}
 
   ul{margin:0 0 8px 18px;padding:0}
   li{margin-bottom:6px}
 
   /* Skill chips (visual only) */
-  .skill-chip{display:inline-block;padding:6px 8px;border-radius:999px;font-size:10px;margin:4px 6px 4px 0;background:rgba(11,92,255,0.08);font-weight:600}
+  .skill-chip{display:inline-block;padding:6px 8px;border-radius:999px;font-size:12px;margin:4px 6px 7px 0;background:rgba(11,92,255,0.08);font-weight:600}
 
   /* Sidebar */
   aside.sidebar{width:100%;min-width:0}
 
   /* Footer */
-  footer.footer{border-top:1px solid rgba(10,20,30,0.05);padding-top:8px;font-size:10.4px;color:var(--muted)}
+  footer.footer{border-top:1px solid rgba(10,20,30,0.05);padding-top:8px;font-size:19.4px;color:var(--muted)}
 
   /* Save button */
   .save-btn{
@@ -133,24 +133,34 @@
       <header class="header" role="banner" aria-label="Resume header">
         <div class="identity">
           <h1 class="name">Raj Shinde</h1>
-          <p class="title">MSc IT student with a strong foundation in Manual and Automation Testing using Python and Selenium. Skilled in writing test cases, identifying defects, and executing test cycles using JIRA and TestRail. Good understanding of STLC, SDLC, and defect management processes. Passionate about ensuring software quality through structured and detail-oriented testing.</p>
+          
+          <section aria-labelledby="links-heading">
+            <h2 id="links-heading"  class="section-title"></h2>
+            <p class="muted"><a href="https://github.com/Raaj-Shinde" target="_blank" style="color:var(--accent)">GitHub</a> | <a target="_blank" href="https://www.linkedin.com/in/alwaysrajshinde/" style="color:var(--accent)">LinkedIn</a></p>
+          </section>
         </div>
 
         <address class="contact" aria-label="Contact information">
-          <div>Email: <a href="mailto:roychowdhury22@gmail.com">roychowdhury22@gmail.com</a></div>
-          <div class="muted">Mobile: +91 9674000000</div>
+          <div>Email: <a href="mailto:roychowdhury22@gmail.com">raaajshinde@gmail.com</a></div>
+          <div>Mobile: <a href="tel:+917558353408">+91 7558353408</a></div>
         </address>
       </header>
 
       <main class="layout" role="main">
         <!-- Left / main content -->
         <section aria-label="Main content">
+          <p style="padding-bottom: 10px;" class="title">MSc IT student with a strong foundation in Manual and Automation Testing using Python and Selenium. Skilled in writing test cases, identifying defects, and executing test cycles using JIRA and TestRail. Good understanding of STLC, SDLC, and defect management processes. Passionate about ensuring software quality through structured and detail-oriented testing.</p>
           <section aria-labelledby="education-heading">
             <h2 id="education-heading" class="section-title">Education</h2>
             <div>
-              <p style="font-weight:700;margin-bottom:4px">Vellore Institute of Technology</p>
-              <p class="muted" style="margin-bottom:2px"><strong>Master of Computer Application</strong></p>
-              <p class="muted">GPA: 8.06 — June 2022 - August 2024</p>
+              <p style="font-weight:700;margin-bottom:4px">Saket College of Arts, Science & Commerce</p>
+              <p style="font-weight:700;margin-bottom:4px">Mumbai University</p>
+              <p class="muted" style="margin-bottom:2px"><strong>Master of Science in Information Technology (Pursuing)</strong></p>
+              <p class="muted">June 2025 - April 2027</p>
+              <p style="font-weight:700;margin-bottom:4px">Saket College of Arts, Science & Commerce</p>
+              <p style="font-weight:700;margin-bottom:4px">Mumbai University</p>
+              <p class="muted" style="margin-bottom:2px"><strong>Bachelor of Science in Computer Science</strong></p>
+              <p class="muted">June 2022 - April 2025</p>
             </div>
           </section>
 
@@ -170,29 +180,24 @@
               <p style="font-weight:700;margin-bottom:4px" id="proj2">Credit Card Fraud Detection — <span class="muted" style="font-weight:600">LINK</span></p>
               <p class="muted">Sept 2023 – Oct 2023</p>
               <ul><li>Improved recall via resampling and robust features.</li></ul>
-            </article>
-
-            <article aria-labelledby="proj3" style="margin-bottom:8px;">
-              <p style="font-weight:700;margin-bottom:4px" id="proj3">Heart Disease Prediction — <span class="muted" style="font-weight:600">LINK</span></p>
-              <p class="muted">Jul 2023 – Aug 2023</p>
-              <ul><li>Feature-engineered models to improve AUC and clinician insights.</li></ul>
+              <ul><li>Improved recall via resampling and robust features.</li></ul>
             </article>
           </section>
 
-          <section aria-labelledby="certs-heading" style="margin-top:6px;">
+          <!-- <section aria-labelledby="certs-heading" style="margin-top:6px;">
             <h2 id="certs-heading" class="section-title">Certifications</h2>
             <ul>
               <li>Programming in Python (Meta) — Mar 2023</li>
               <li>Data Analytics — Mar 2023</li>
             </ul>
-          </section>
+          </section> -->
 
           <section aria-labelledby="skills-summary-heading" style="margin-top:10px;">
             <h2 id="skills-summary-heading" class="section-title">Skills Summary</h2>
             <div style="display:flex;gap:18px;flex-wrap:wrap">
               <div style="min-width:200px">
                 <p style="font-weight:700;margin:0 0 6px 0">Languages:</p>
-                <p class="muted">Python, SQL, Java</p>
+                <p class="muted">Python</p>
 
                 <p style="font-weight:700;margin:10px 0 6px 0">Testing Tools:</p>
                 <p class="muted">JIRA, TestRail, Selenium WebDriver</p>
@@ -211,31 +216,29 @@
           <section aria-labelledby="skills-heading" style="margin-bottom:12px;">
             <h2 id="skills-heading" class="section-title">Skills</h2>
             <div aria-hidden="true">
-              <span class="skill-chip">Python</span><span class="skill-chip">SQL</span><span class="skill-chip">Pandas</span><br>
-              <span class="skill-chip">Scikit-Learn</span><span class="skill-chip">Postman</span><span class="skill-chip">Tableau</span>
+              <span class="skill-chip">Python</span><span class="skill-chip">Selenium</span><span class="skill-chip">Pytest</span><br>
+              <span class="skill-chip">HTML</span><span class="skill-chip">CSS</span><span class="skill-chip">JIRA</span><span class="skill-chip">TestRail</span><span class="skill-chip">TailwindCSS</span><span class="skill-chip">Bootstrap</span>
             </div>
-            <!-- ATS: also include machine-readable simple list -->
-            <p class="muted" style="margin-top:8px;">Python; SQL; Pandas; Scikit-Learn; Postman; Tableau; Power BI; Excel; MySQL</p>
-          </section>
+            
 
           <section aria-labelledby="languages-heading" style="margin-bottom:12px;">
             <h2 id="languages-heading" class="section-title">Languages</h2>
-            <p class="muted">English — Fluent<br>Hindi — Native<br>Marathi — Intermediate</p>
+            <p class="muted">Marathi — Native<br>Hindi — Fluent<br>English — Intermediate</p>
           </section>
 
-          <section aria-labelledby="links-heading">
+          <!-- <section aria-labelledby="links-heading">
             <h2 id="links-heading" class="section-title">Quick Links</h2>
-            <p class="muted">GitHub: <a href="#" style="color:var(--accent)">github.com/username</a><br>LinkedIn: <a href="#" style="color:var(--accent)">linkedin.com/in/username</a></p>
-          </section>
+            <p class="muted">GitHub: <br> <a href="#" style="color:var(--accent)">https://github.com/Raaj-Shinde</a><br>LinkedIn: <br> <a href="#" style="color:var(--accent)">https://www.linkedin.com/in/alwaysrajshinde/</a></p>
+          </section> -->
         </aside>
       </main>
 
-      <footer class="footer" role="contentinfo">Proofread for tense and accuracy. Save as <strong>FullName_Resume.pdf</strong>.</footer>
+      <footer class="footer" role="contentinfo"><strong></strong></footer>
 
       <!-- Hidden for ATS: simple plain text contact/keywords block (keeps keywords machine-readable) -->
       <div class="visually-hidden" aria-hidden="false">
-        FULL NAME — Chowdhury. Email: roychowdhury22@gmail.com. Mobile: +919674000000.
-        Skills: Python, SQL, Pandas, Scikit-Learn, Postman, Tableau, Power BI, Excel, MySQL.
+        FULL NAME — Raj Shinde. Email: raaajshinde@gmail.com. Mobile: +917558353408.
+        Skills: Python,Selenium,Pytest,HTML,TailwindCSS,Bootstrap.
         Certifications: Programming in Python (Meta), Data Analytics.
       </div>
     </article>
